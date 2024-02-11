@@ -1,0 +1,122 @@
+/* style.css */
+/* Add this to your existing style.css */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: rgb(48, 138, 138);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin-right: 20px;
+    display: inline;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    border: lightgreen solid 1px;
+    padding: 5%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+#menu a:hover {
+    color: #46e0a2;
+    transform: scale(1.1);
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 8px;
+    background-color: #ffffff;
+    color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ecf0f1;
+}
+
+
+#home {
+    text-align: center;
+    font-size: 48px;
+    color: #a4c65a; /* Light blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+    margin-top: 50px;
+    letter-spacing: 2px; /* Add some letter spacing */
+    font-family: 'Roboto', sans-serif; /* Choose a suitable font-family */
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% - 20px); /* Full width on mobile */
+    transition: transform 0.3s ease;
+    
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+    .project-card {
+        width: calc(50% - 20px); /* Half width on tablets and larger */
+    }
+}
+
+@media (min-width: 900px) {
+    .project-card {
+        width: calc(33% - 20px); /* One third width on desktops and larger */
+    }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+}
